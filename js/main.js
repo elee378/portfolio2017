@@ -8,6 +8,32 @@
 			theSeasonText = document.querySelector('.main-copy p'),
 			appliedClass;
 
+
+
+    // function getCarData(){
+    //   const url = './includes/functions.php?carModel=' + this.id;
+
+    //   //the fetch API uses new Javascript Promise API
+    //   fetch(url) //do an ajax call with fetch
+    //     .then((resp) => resp.json()) // convert to json
+    //       .then(({modelName, pricing, modelDetails, model}) => {
+    //         let carModel = document.querySelector('.modelInfo');
+    //         let header = document.querySelector('.modelName').textContent = modelName;
+    //         let price = document.querySelector('.priceInfo').innerHTML = pricing;
+    //         let text = document.querySelector('.modelDetails').textContent = modelDetails;
+
+    //         images.forEach(function(car, index){
+    //           car.classList.add('nonActive');
+    //         });
+    //         //this is a template string constructor
+    //         document.querySelector(`#${model}`).classList.remove('nonActive');
+    //       }) // call the process function passing the data
+    //         .catch(function(error){
+    //           //catch ANY error and report it to console
+    //           console.log(error);
+    //         });
+
+
 			// i want to change all the content on the page
 			function changeElements(){
 				//debugger; //this is a special term that stops code execution, can be used for testing
@@ -37,6 +63,7 @@
 					subImages.appendChild(newSubImg);
 				});
 
+
 				//remove the colours we applied on the last click
 				theSubhead.classList.remove(appliedClass);
 				theHeading.classList.remove(appliedClass);
@@ -61,7 +88,7 @@
 			function popLightbox(currentIndex, currentObject){
 				//debugger;
 				//move the window to the top every time we click - quick bug fix
-				window.scrollTo(0, 0);
+				// window.scrollTo(0, 0);
 				document.body.style.overflow = "hidden";
 				let lightbox = document.querySelector('.lightbox');
 				let lightboxImg = lightbox.querySelector('img');
@@ -69,7 +96,7 @@
 				let lightBoxClose = document.querySelector('.close-lightbox');
 
 				lightbox.style.display = "block";
-				lightboxImg.src = "img/" + currentObject.images[currentIndex];
+				lightboxImg.src = "img/" + currentObject.imagesLightbox[currentIndex];
 				lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
 
 				lightBoxClose.addEventListener('click', closeLightbox, false);
