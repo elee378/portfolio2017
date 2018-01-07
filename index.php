@@ -1,15 +1,9 @@
-<<<<<<< HEAD
 <?php
 include './admin/scripts/connect.php';
 
 ?>
 <!DOCTYPE html>
 <html lang="en-US" class="no-js">
-=======
-<!DOCTYPE html>
-<html lang="en-US" class="no-js">
-
->>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 <head>
 	<!-- Title and Meta Tags -->
 	<meta charset="utf-8">
@@ -19,12 +13,7 @@ include './admin/scripts/connect.php';
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-<<<<<<< HEAD
 	<link rel="stylesheet" href="css/fontawesome.css">		
-=======
-	<link rel="stylesheet" href="css/fontawesome.css">
-		
->>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Montserrat" rel="stylesheet">
 </head>
@@ -32,7 +21,6 @@ include './admin/scripts/connect.php';
 <body>
 
 <?php
-<<<<<<< HEAD
 	$headerimg = "SELECT * FROM tbl_portfolio;";
 
 	$result = mysqli_query($link, $headerimg);
@@ -47,8 +35,6 @@ include './admin/scripts/connect.php';
 
 
 <?php
-=======
->>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 include("includes/header.html");
 ?>
 
@@ -56,7 +42,6 @@ include("includes/header.html");
 include("includes/about.html");
 ?>
 
-<<<<<<< HEAD
 <?php
 include("includes/portfolio.html");
 ?>
@@ -64,32 +49,6 @@ include("includes/portfolio.html");
 <?php
 include("contact.php");
 ?>
-=======
-<footer id="contact" class="content-section text-center">
-	<div class="contact-section">
-	<div class="container">
-		<h2>Contact me here</h2>
-		<p>Feel free to shoot me a message.</p>
-		<div class="row">
-			<div class="col-md-12 col-md-8">
-				<form class="form-horizontal">
-					<div class="form-group">
-						<label>Name: </label><input name="name" type="text" size="21" maxlength="30" />
-					</div>
-					<div class="form-group">
-						<label>Email: </label><input name="email" type="text" size="21" maxlength="30" />
-					</div>
-					<div class="form-group ">
-						<label for="message">Message: </label><textarea name="message"></textarea>
-					</div>
-					<input name="submit" type="submit" value="Send" />
-				</form>
-            </div>
-        </div>
-    </div>
-    </div>
-</footer>
->>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 
 <!-- SCRIPTS -->
 <script src="js/contentObject.js"></script>
