@@ -1,4 +1,8 @@
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 	function redirect_to($location) {
 		if($location !=NULL){
 			header("Location: {$location}");

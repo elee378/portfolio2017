@@ -194,6 +194,37 @@ padding-top: 15px;
    overflow-y: scroll;
    top: 0; right: 0; bottom: 0; left: 0; }
 
+<<<<<<< HEAD
+=======
+#cvCon h1
+{
+	text-align: center;
+}
+
+#cvCon button{
+	width: 50%;
+	margin-bottom: 50px;
+	border-style: none;
+	cursor: auto;
+	transition: color 0.3s ease;	
+	transition: background-color 0.3s ease;	
+}
+
+#cvCon button:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+#cvCon div{
+	padding: 0 !important;
+}
+
+/*Footer*/
+footer
+{
+	color: #ec3c2b;
+}
+>>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 
 /*COLORS*/
 .orange
@@ -242,12 +273,17 @@ padding-top: 15px;
 	display: none;
 }
 
+<<<<<<< HEAD
 form {
   margin: 0 auto;
   width: 400px;
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
+=======
+textarea.form-control{
+    height:100px;
+>>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 }
 
 form div + div {
@@ -303,10 +339,13 @@ button {
 	padding: 15px 10px 15px 10px;
 	}
 
+<<<<<<< HEAD
 	#about p{
 		font-size: 1.2em;
 	}
 
+=======
+>>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 .image-holder {
 	padding-left: 50px;
 	}
@@ -315,6 +354,7 @@ button {
 {
 	padding: 15px 10px 15px 10px;
 	font-size: 1.4em;
+<<<<<<< HEAD
 }
 
 .lightbox{
@@ -324,6 +364,8 @@ button {
 	color: black;
 	margin: 0 auto;
 }
+=======
+>>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -336,10 +378,13 @@ button {
 		padding-top: 50px;
 	}
 
+<<<<<<< HEAD
 	#about p{
 		font-size: 1.3em;
 	}
 
+=======
+>>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 	#headerName
 	{
 	font-size: 4.5em;
