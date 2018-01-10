@@ -1,7 +1,12 @@
 @charset "UTF-8";
 body
 {
-	background-image: url('../img/bg.jpg')
+	background-image: url('../img/bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #464646;
 }
 
 .img-responsive,
@@ -22,23 +27,28 @@ body
 
 #headerName
 {
-	width: 100%;
-	height: 25%;
-}
-
-#headerName h1
-{
+	font-size: 4em;
 	font-family: 'Libre Baskerville';
-	padding: 15px 10px 10px 10px;
+	padding: 25px 20px 25px 10px;
 	color: #fff;
+	text-align: right;
+	width: 100%;
 }
 
 #headerTitle
 {
 	width: 100%;
 	font-family: 'Montserrat';
-	padding: 10px 10px 0px 10px;
-	float: right;
+	padding: 25px 20px 25px 10px;
+	text-align: right;
+}
+
+.navCon{
+	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+	/*align-content: space-between;*/
+	justify-content: space-between;
 }
 
 #site-nav
@@ -49,19 +59,20 @@ body
 
 #site-nav ul
 {
-	padding: 0;
+	padding: 25px 0px 25px 0px;
 	margin: 0;
+	width: 100%;
 }
 
 #site-nav ul li
 {
 	display: inline-block;
 	width: 25%;
-	height: 50px;
+	height: 100%;
 	list-style: none;
 	float: left;
 	text-align: center;
-	padding-top: 13px;
+	padding: 0;
 }
 
 #site-nav ul li a
@@ -70,7 +81,7 @@ body
 	color: #fff;
 }
 
-/*ABOUT ME/FEATURED PROJECTS*/
+/*ABOUT ME*/
 #foxProfile
 {
 	padding-top: 25px;
@@ -81,6 +92,10 @@ body
 	padding-top: 25px;
 }
 
+#about p{
+		font-size: 1.15em;
+	}
+
 /*feature projects*/
 .featured {
 font-family: 'Libre Baskerville';
@@ -89,24 +104,26 @@ padding-top: 15px;
 
 .featured h1
 {
-	padding-left: 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .image-holder {
 	display: inline-block;
-	margin: 0;
-	border: 0;
-	padding-left: 15px;
-	padding-bottom: 15px;
 	cursor: pointer;
 	transition: opacity 0.3s ease;	
+	padding-left: 10px;
+}
+
+.image-holder p{
+	font-style: none;
 }
 
 .image-holder:hover {
 	opacity: 0.3;
 }
 
-.web { color: #ec3c2b; }
+.web { color: #333; }
 .design { color: #f8a40a; }
 .other { color: #930d03; }
 .all { color: #fff; }
@@ -114,8 +131,8 @@ padding-top: 15px;
 .main-copy { 
 	width: 100%;
 	font-size: 1.5em; 
-	padding-left: 15px;
 	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .main-copy h2 {
 	text-transform: capitalize;
@@ -133,13 +150,17 @@ padding-top: 15px;
 
 .subImagesContainer { 
 	padding: 0; 
+	margin: 0;
 	width: 100%;
+	list-style-type: none;
 }
 
 .thumb { 
 	width: 100%;
 	cursor: pointer; 
+	display: inline-block;
 }
+
 
 
 .lightbox{
@@ -149,8 +170,8 @@ padding-top: 15px;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.75);
-	color: white;
+	background-color: #fff;
+	color: black;
 }
 
 .close-lightbox{
@@ -175,6 +196,7 @@ padding-top: 15px;
 	margin: 0 auto;
 	width: 80%;
 	padding-top: 25px;
+	font-family: 'Montserrat';
 }
 
 .noscroll { 
@@ -185,12 +207,6 @@ padding-top: 15px;
    position: fixed; 
    overflow-y: scroll;
    top: 0; right: 0; bottom: 0; left: 0; }
-
-/*Footer*/
-footer
-{
-	color: #ec3c2b;
-}
 
 /*COLORS*/
 .orange
@@ -226,14 +242,48 @@ footer
 /*footer and contact*/
 #contact{
 	padding-top: 20px;
-	background:#333333;
-	color:#f4f4f4;
 	padding-bottom:80px;
+	background-image: url("../img/contactbg.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	width: 100%;
+	height: 100%;
 }
 
-textarea.form-control{
-    height:100px;
+.street{
+	display: none;
 }
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+
+label {
+  display: inline-block;
+  width: 90px;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  height: 5em;
+}
+
+
 
 /*responsive*/
 /* Extra small devices (phones, less than 768px) */
@@ -242,16 +292,68 @@ textarea.form-control{
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 	.image-holder {
-	margin-left: 50px;
 	padding-top: 5px;
 	}
 
 	.thumb{
 	width: 25%;
 	}
+
+	#headerName
+	{
+	font-size:3.5em;
+	padding: 15px 10px 15px 10px;
+	}
+
+	#about p{
+		font-size: 1.2em;
+	}
+
+.image-holder {
+	padding-left: 50px;
+	}
+
+#headerTitle
+{
+	padding: 15px 10px 15px 10px;
+	font-size: 1.4em;
+}
+
+.lightbox{
+	width: 75%;
+	height: 100%;
+	background-color: #fff;
+	color: black;
+	margin: 0 auto;
+}
+
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	#foxProfile{
+		padding-bottom: 30px;
+	}
+
+	#about{
+		padding-top: 50px;
+	}
+
+	#about p{
+		font-size: 1.3em;
+	}
+
+	#headerName
+	{
+	font-size: 4.5em;
+	padding: 25px 10px 25px 10px;
+	}
+
+	#headerTitle
+{
+	padding: 10px 10px 10px 10px;
+	font-size: 2.1em;
+}
+}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
