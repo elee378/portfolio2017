@@ -1,7 +1,12 @@
 @charset "UTF-8";
 body
 {
-	background-image: url('../img/bg.jpg')
+	background-image: url('../img/bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #464646;
 }
 
 .img-responsive,
@@ -24,7 +29,7 @@ body
 {
 	font-size: 4em;
 	font-family: 'Libre Baskerville';
-	padding: 25px 10px 25px 10px;
+	padding: 25px 20px 25px 10px;
 	color: #fff;
 	text-align: right;
 	width: 100%;
@@ -34,7 +39,7 @@ body
 {
 	width: 100%;
 	font-family: 'Montserrat';
-	padding: 25px 10px 25px 10px;
+	padding: 25px 20px 25px 10px;
 	text-align: right;
 }
 
@@ -110,6 +115,10 @@ padding-top: 15px;
 	padding-left: 10px;
 }
 
+.image-holder p{
+	font-style: none;
+}
+
 .image-holder:hover {
 	opacity: 0.3;
 }
@@ -141,13 +150,17 @@ padding-top: 15px;
 
 .subImagesContainer { 
 	padding: 0; 
+	margin: 0;
 	width: 100%;
+	list-style-type: none;
 }
 
 .thumb { 
 	width: 100%;
 	cursor: pointer; 
+	display: inline-block;
 }
+
 
 
 .lightbox{
@@ -183,6 +196,7 @@ padding-top: 15px;
 	margin: 0 auto;
 	width: 80%;
 	padding-top: 25px;
+	font-family: 'Montserrat';
 }
 
 .noscroll { 
@@ -193,38 +207,6 @@ padding-top: 15px;
    position: fixed; 
    overflow-y: scroll;
    top: 0; right: 0; bottom: 0; left: 0; }
-
-<<<<<<< HEAD
-=======
-#cvCon h1
-{
-	text-align: center;
-}
-
-#cvCon button{
-	width: 50%;
-	margin-bottom: 50px;
-	border-style: none;
-	cursor: auto;
-	transition: color 0.3s ease;	
-	transition: background-color 0.3s ease;	
-}
-
-#cvCon button:hover{
-	background-color: #fff;
-	color: #000;
-}
-
-#cvCon div{
-	padding: 0 !important;
-}
-
-/*Footer*/
-footer
-{
-	color: #ec3c2b;
-}
->>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 
 /*COLORS*/
 .orange
@@ -260,35 +242,26 @@ footer
 /*footer and contact*/
 #contact{
 	padding-top: 20px;
-	background:#333333;
-	color:#f4f4f4;
 	padding-bottom:80px;
 	background-image: url("../img/contactbg.png");
 	background-repeat:no-repeat;
 	background-position:center;
 	width: 100%;
+	height: 100%;
 }
 
 .street{
 	display: none;
 }
 
-<<<<<<< HEAD
 form {
   margin: 0 auto;
   width: 400px;
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
-=======
-textarea.form-control{
-    height:100px;
->>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 }
 
-form div + div {
-  margin-top: 1em;
-}
 
 label {
   display: inline-block;
@@ -310,13 +283,6 @@ textarea {
   height: 5em;
 }
 
-.button {
-  padding-left: 90px; 
-}
-
-button {
-  margin-left: .5em;
-}
 
 
 /*responsive*/
@@ -339,13 +305,10 @@ button {
 	padding: 15px 10px 15px 10px;
 	}
 
-<<<<<<< HEAD
 	#about p{
 		font-size: 1.2em;
 	}
 
-=======
->>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 .image-holder {
 	padding-left: 50px;
 	}
@@ -354,7 +317,6 @@ button {
 {
 	padding: 15px 10px 15px 10px;
 	font-size: 1.4em;
-<<<<<<< HEAD
 }
 
 .lightbox{
@@ -364,8 +326,7 @@ button {
 	color: black;
 	margin: 0 auto;
 }
-=======
->>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -378,13 +339,10 @@ button {
 		padding-top: 50px;
 	}
 
-<<<<<<< HEAD
 	#about p{
 		font-size: 1.3em;
 	}
 
-=======
->>>>>>> f2812082149c42d8e5ce89d2531a454e468b41d3
 	#headerName
 	{
 	font-size: 4.5em;

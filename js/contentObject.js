@@ -62,9 +62,9 @@ var dynamicContent = {
 			],
 
 			imageDescription : [
-				"this is description 1",
-				"this is description 2",
-				"this is description 3",
+				"Lamborghini Website: Web Design, Web Development, and CINEMA4D. Contact me for a Live Preview!",
+				"Pesci Fishing: Web Design, Web Development. Contact me for a Live Preview!",
+				"Organica Restaurant: Web Design, Web Development. Contact me for a Live Preview!",
 			]
 		},
 
@@ -86,9 +86,9 @@ var dynamicContent = {
 			],
 
 			imageDescription : [
-				"this is description 5",
-				"this is description 6",
-				"this is description 7",
+				"Ecomo Water Bottle: Graphic Design, Branding, Marketing. Contact me for examples!",
+				"Ivey Ace Conference: Graphic Design, Branding, Marketing. Contact me for examples!",
+				"D&R Electricians: Graphic Design, Branding, Web Design. Contact me for examples!",
 			]
 		},
 
@@ -112,10 +112,10 @@ var dynamicContent = {
 			],
 
 			imageDescription : [
-				"this is description 9",
-				"this is description 10",
-				"this is description 11",
-				"this is description 12"
+				"Pixel Studios: Graphic Design, a project done for fun.",
+				"Detailed Landscape: Graphic Design, a project done for fun.",
+				"Dragon Illustration: Graphic Design, a project done for fun.",
+				"Magazine Design: Graphic Design, a project done for fun."
 			]
 		}
 	};
