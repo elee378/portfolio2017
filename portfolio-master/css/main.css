@@ -1,0 +1,420 @@
+@charset "UTF-8";
+body
+{
+	background-image: url('../img/bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #464646;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*HEADER/NAV*/
+#headerimg
+{
+	padding: 0;
+}
+
+#headerName
+{
+	font-size: 4em;
+	font-family: 'Libre Baskerville';
+	padding: 25px 20px 25px 10px;
+	color: #fff;
+	text-align: right;
+	width: 100%;
+}
+
+#headerTitle
+{
+	width: 100%;
+	font-family: 'Montserrat';
+	padding: 25px 20px 25px 10px;
+	text-align: right;
+}
+
+.navCon{
+	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+	/*align-content: space-between;*/
+	justify-content: space-between;
+}
+
+#site-nav
+{
+	width: 100%;
+	padding: 0;
+}
+
+#site-nav ul
+{
+	padding: 25px 0px 25px 0px;
+	margin: 0;
+	width: 100%;
+}
+
+#site-nav ul li
+{
+	display: inline-block;
+	width: 25%;
+	height: 100%;
+	list-style: none;
+	float: left;
+	text-align: center;
+	padding: 0;
+}
+
+#site-nav ul li a
+{
+	font-family: 'Montserrat';
+	color: #fff;
+}
+
+/*ABOUT ME*/
+#foxProfile
+{
+	padding-top: 25px;
+}
+
+#about
+{
+	padding-top: 25px;
+}
+
+#about p{
+		font-size: 1.15em;
+	}
+
+/*feature projects*/
+.featured {
+font-family: 'Libre Baskerville';
+padding-top: 15px;
+}
+
+.featured h1
+{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.image-holder {
+	display: inline-block;
+	cursor: pointer;
+	transition: opacity 0.3s ease;	
+	padding-left: 10px;
+}
+
+.image-holder p{
+	font-style: none;
+}
+
+.image-holder:hover {
+	opacity: 0.3;
+}
+
+.web { color: #333; }
+.design { color: #f8a40a; }
+.other { color: #930d03; }
+.all { color: #fff; }
+
+.main-copy { 
+	width: 100%;
+	font-size: 1.5em; 
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.main-copy h2 {
+	text-transform: capitalize;
+	text-align: left;
+	margin: 0;
+	font-family: 'Libre Baskerville';
+}
+
+.main-copy p {
+	color: #fff;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	font-family: 'Montserrat';
+}
+
+.subImagesContainer { 
+	padding: 0; 
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+}
+
+.subImagesContainer ul {
+
+}
+.subImagesContainer li {
+	width: 25%;
+	border-style: none;
+	float: left;
+}
+.thumb { 
+	width: 285px;
+	cursor: pointer; 
+}
+
+
+#lightbox{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	background:rgba(0, 0, 0, 0.3);
+	display:none;
+}
+
+#lightbox.open{
+	display:block;
+}
+
+#lightbox_content{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#ffffff;
+	border-radius:3px;
+	position: fixed; 
+    overflow-y: scroll;
+    top: 0; right: 0; bottom: 0; left: 0; 
+	text-align:center;
+}
+
+#close{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+#lightbox img {
+}
+
+/*
+.lightbox{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	color: black;
+}
+
+.lightbox overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:#000;
+    opacity:0;
+    filter:alpha(opacity=0);
+    z-index:50;
+}
+
+.close-lightbox{
+	float: right;
+	margin-right: 18px;
+	margin-top: 12px;
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.lightboxClose{
+	display: none;
+}
+
+.lightbox-img {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+.img-desc{
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	padding-top: 25px;
+	font-family: 'Montserrat';
+}
+
+.noscroll { 
+  overflow: hidden;
+}
+
+.overlay { 
+   position: fixed; 
+   overflow-y: scroll;
+   top: 0; right: 0; bottom: 0; left: 0; }
+*/
+/*COLORS*/
+.orange
+{
+	color: #ec3c2b;
+}
+
+.white
+{
+	color: #fff;
+}
+
+.blue
+{
+	color: #303643;
+}
+
+.orangeBg
+{
+	background-color: #ec3c2b;
+}
+
+.whiteBg
+{
+	background-color: #fff;
+}
+
+.blueBg
+{
+	background-color: #303643;
+}
+
+/*footer and contact*/
+#contact{
+	padding-top: 20px;
+	padding-bottom:80px;
+	background-image: url("../img/contactbg.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	width: 100%;
+	height: 100%;
+}
+
+.street{
+	display: none;
+}
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+
+label {
+  display: inline-block;
+  width: 90px;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  height: 5em;
+}
+
+
+
+/*responsive*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.image-holder {
+	padding-top: 5px;
+	}
+
+	.thumb{
+	width: 100%%;
+	}
+
+	#headerName
+	{
+	font-size:3.5em;
+	padding: 15px 10px 15px 10px;
+	}
+
+	#about p{
+		font-size: 1.2em;
+	}
+
+.image-holder {
+	padding-left: 50px;
+	}
+
+#headerTitle
+{
+	padding: 15px 10px 15px 10px;
+	font-size: 1.4em;
+}
+
+.lightbox{
+	width: 75%;
+	height: 100%;
+	background-color: #fff;
+	color: black;
+	margin: 0 auto;
+}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	#foxProfile{
+		padding-bottom: 30px;
+	}
+
+	#about{
+		padding-top: 50px;
+	}
+
+	#about p{
+		font-size: 1.3em;
+	}
+
+	#headerName
+	{
+	font-size: 4.5em;
+	padding: 25px 10px 25px 10px;
+	}
+
+	#headerTitle
+{
+	padding: 10px 10px 10px 10px;
+	font-size: 2.1em;
+}
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
